@@ -1,10 +1,10 @@
-# Kutary Database
+# Modelagem do banco de dados Kutary_app
 
 Sistema de banco de dados para monitoramento territorial indígena desenvolvido para a COIAB (Coordenação das Organizações Indígenas da Amazônia Brasileira).
 
 ## Visão Geral
 
-O **Kutary** é uma plataforma de coleta e monitoramento de dados territoriais indígenas que permite:
+O objeivo da modelagem foi mapear as necessidades para um banco de dados que desse conta da coleta e monitoramento de dados territoriais indígenas que permite:
 
 - **Monitoramento Territorial**: Coleta de dados sobre aldeias, territórios e locais de interesse
 - **Gestão de Cadeias Produtivas**: Acompanhamento de atividades econômicas sustentáveis
@@ -86,7 +86,7 @@ kutary_db/
 
 1. **Clone o repositório**
    ```bash
-   git clone <url-do-repositorio>
+   git clone https://github.com/hiurequeiroz/kutary_db
    cd kutary_db
    ```
 
