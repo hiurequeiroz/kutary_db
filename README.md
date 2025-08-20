@@ -2,7 +2,7 @@
 
 Sistema de banco de dados para monitoramento territorial indígena desenvolvido para a COIAB (Coordenação das Organizações Indígenas da Amazônia Brasileira).
 
-## 📋 Visão Geral
+## Visão Geral
 
 O **Kutary** é uma plataforma de coleta e monitoramento de dados territoriais indígenas que permite:
 
@@ -13,7 +13,7 @@ O **Kutary** é uma plataforma de coleta e monitoramento de dados territoriais i
 - **Workflow de Validação**: Processo de revisão e aprovação de coletas
 - **Sincronização Offline**: Funcionalidade para trabalho em campo sem conectividade
 
-## 🗄️ Arquitetura do Banco de Dados
+## Arquitetura do Banco de Dados
 
 ### Tecnologias Utilizadas
 - **PostgreSQL 14+** - Sistema de gerenciamento de banco de dados
@@ -26,7 +26,7 @@ O **Kutary** é uma plataforma de coleta e monitoramento de dados territoriais i
 
 *Diagrama completo das entidades e relacionamentos do banco de dados Kutary*
 
-## 📁 Estrutura do Projeto
+## Estrutura do Projeto
 
 ```
 kutary_db/
@@ -45,37 +45,37 @@ kutary_db/
     └── 05_seed.sql            # Dados iniciais (papéis e categorias)
 ```
 
-## 🏗️ Principais Entidades
+## Principais Entidades
 
-### 👥 Usuários e Organizações
+### Usuários e Organizações
 - **Usuario**: Usuários do sistema com perfis e organizações
 - **Organizacao**: Estrutura hierárquica (Nacional/Regional/Local)
 - **Papel**: Definição de papéis (Agente, Liderança, Analista, Coordenador)
 - **Etnia**: Identificação étnica dos usuários
 
-### 🗺️ Território e Localização
+### Território e Localização
 - **Territorio**: Áreas geográficas com geometrias MultiPolygon
 - **Aldeia**: Pontos ou áreas de aldeias indígenas
 - **LocalEvento**: Locais específicos de eventos ou interesse
 
-### 📊 Coleta de Dados
+### Coleta de Dados
 - **Coleta**: Entidade central para todos os tipos de coleta
 - **Categoria**: Classificação por domínio (Monitoramento/Cadeia/Censo/Alerta)
 - **ColetaMidia**: Arquivos multimídia associados às coletas
 - **StatusColeta**: Workflow de status (Rascunho → Enviado → Em Análise → Validado → Publicado)
 
-### 🔐 Segurança e Privacidade
+### Segurança e Privacidade
 - **Consentimento**: Controle de consentimento LGPD
 - **CensoRegistro**: Dados sensíveis com atributos JSON criptografados
 - **Row Level Security**: Políticas de acesso por organização
 
-### 🔄 Funcionalidades Avançadas
+### Funcionalidades Avançadas
 - **Notificacao**: Sistema de notificações
 - **ItemPaneiro**: Favoritos/salvos dos usuários
 - **Sincronizacao**: Controle de sincronização offline
 - **Validacao**: Processo de validação de coletas
 
-## 🚀 Como Usar
+## Como Usar
 
 ### Pré-requisitos
 - PostgreSQL 14 ou superior
@@ -120,7 +120,7 @@ pip install graphviz
 python gerar_erd_kutary.py
 ```
 
-## 📊 Views Disponíveis
+## Views Disponíveis
 
 O sistema inclui views pré-configuradas para facilitar consultas:
 
@@ -129,14 +129,14 @@ O sistema inclui views pré-configuradas para facilitar consultas:
 - **v_coletas_geojson**: Dados em formato GeoJSON para APIs
 - **v_painel_status**: Dashboard com contagens por organização/território
 
-## 🔒 Segurança e LGPD
+## Segurança e LGPD
 
 - **Row Level Security (RLS)**: Controle de acesso por organização
 - **Consentimento**: Sistema de consentimento para dados sensíveis
 - **Criptografia**: Suporte para criptografia de dados sensíveis
 - **Auditoria**: Histórico de mudanças de status e validações
 
-## 🔧 Integração com Frameworks
+## Integração com Frameworks
 
 ### Django
 ```python
@@ -155,7 +155,7 @@ O sistema inclui views pré-configuradas para facilitar consultas:
 # Configure current_setting('app.organizacao_id') para RLS
 ```
 
-## 📈 Próximos Passos
+## Próximos Passos
 
 1. **Completar taxonomias** com listas oficiais de categorias, etnias e organizações
 2. **Implementar workflow de validação** completo
@@ -163,7 +163,7 @@ O sistema inclui views pré-configuradas para facilitar consultas:
 4. **Configurar sincronização offline** para trabalho em campo
 5. **Implementar criptografia** para dados sensíveis do censo
 
-## 🤝 Contribuição
+## Contribuição
 
 Para contribuir com o projeto:
 
@@ -173,7 +173,7 @@ Para contribuir com o projeto:
 4. Teste as migrações
 5. Submeta um pull request
 
-## 📄 Licença
+## Licença
 
 Este projeto é desenvolvido para a COIAB e segue as diretrizes de proteção de dados indígenas.
 
